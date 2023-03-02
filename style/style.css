@@ -7,17 +7,18 @@
      --logoh: #63be1997;
      --narx: #519d14;
      --text: #69cf17;
-     --0000: 'Raleway-Black';
-     --1111: 'Raleway-Thin' ;
-     --2222: 'Raleway-Bold' ;
-     --3333: 'Raleway-Regular' ;
-     --4444: 'Raleway-Light' ;
+     --ff-black: 'Raleway-Black';
+     --ff-thin: 'Raleway-Thin' ;
+     --ff-bold: 'Raleway-Bold' ;
+     --ff-regular: 'Raleway-Regular' ;
+     --ff-light: 'Raleway-Light' ;
      --black: #000000;
+     --gray: #dedede;
      --white: #ffffff;
  }
 /* GLOBALL */
 html {
-     height: 100%;
+     /*  */
      box-sizing: border-box;
      scroll-behavior: smooth;
 }
@@ -26,6 +27,10 @@ html {
 *::before,
 *::after {
      box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+     list-style: none;
+     text-decoration: none;
 }
 
 body {
@@ -86,8 +91,8 @@ select:-webkit-autofill:focus {
 .container {
      width: 100%;
      max-width: 1200px;
-     padding-left: 50px;
-     padding-right: 50px;
+     padding-left: 20px;
+     padding-right: 20px;
      margin-left: auto;
      margin-right: auto;
 }
@@ -95,6 +100,183 @@ select:-webkit-autofill:focus {
 .main-content {
      flex-grow: 1;
 }
+
+.justify-content{
+     justify-content: space-between;
+}
+.align-item{
+     align-items: center;
+}
+
+.flex-direction{
+     flex-direction: column;
+}
+.start{
+     align-items: start;
+     justify-content: start;
+}
+.display-flex{
+     display: flex;
+}
+
+/* header  */
+header{
+     height: 800px;
+     padding-top: 30px;
+     background-image: url(../img/bg_img.jpg) ;
+     background-position: center center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+nav .logo{
+     background-color: #4d9c0d;
+     font-size: 24px;
+     line-height: 36px;
+     text-decoration: none;
+     text-transform: uppercase;
+     padding: 0 35px 0 35px ;
+     color: white;
+     border: 4px solid #62BE19;
+     border-radius: 5px;
+}
+header ul{
+     display: flex;
+}
+header ul a {
+     display: flex;
+     font-size: 20px;
+     color: var(--logob);
+     font-weight: 300;
+     padding: 24px 31px;
+     border-radius: 20px;
+     transition: 0.5s ease;
+}
+header ul a:hover{
+     background: var(--logoh);
+     color: var(--white);
+     text-decoration: none;
+}
+header ul .cart span{
+     width: 24px;
+     height: 24px;
+     background-color: var(--white);
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: 6px;
+     margin-bottom: -10px;
+}
+header ul .cart span{
+     color: #000000;
+}
+header h1{
+     margin-top: 100px;
+     color: var(--logob);
+     font-size: 72px;
+     font-family: var(--ff-black);
+     margin-bottom: 30px;
+}
+.text_heading{
+     font-size: 36px;
+     color: var(--logob);
+     font-family: var(--ff-regular);
+     margin-bottom: 30px;
+
+}
+.text_heading__para{
+     font-size: 16px;
+     color: var(--gray);
+     font-family: var(--ff-regular);
+     margin-bottom: 40px;
+}
+header .text-heading__narx{
+     width: auto;
+     font-size: 50px;
+     color: var(--gray);
+     font-family: var(--ff-light);
+     padding: 10px 60px 10px 60px;
+     background: #5EAC28;
+}
+
+
+/* SECTION */
+section{
+     background-color: #000000;
+}
+section .row{
+     margin-top: 40px;
+}
+
+section li a{
+     margin-left: 20px;
+     color: #7a7a7a;
+     font-size: 20px;
+     font-family: var(--ff-bold);
+
+}
+section li a:hover{
+     text-decoration: none;
+     color: #4d9c0d;
+}
+.active{
+     color: #4d9c0d;
+}
+section .block-burger img{
+     width: 100%;
+}
+
+section .block-burger {
+     position: relative;
+}
+
+section .block-burger button{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: 0;
+     font-size: 0;
+     color: var(--white);
+     font-weight: 700;
+     transition: 0.5s ease;
+}
+section .block-burger .section_narx{
+     position: absolute;
+     bottom: -20px;
+     left: 0;
+     background-color: #4d9c0d;
+     font-size: 30px;
+     padding: 18px 55px;
+}
+section .block-burger button:hover{
+     font-size: 24px;
+     background-color: #6ac4156b;
+}
+
+section .block-burger .section_narx:hover{
+     position: absolute;
+     display: none;
+}
+section .section-row{
+     margin-top: 80px;
+}
+section h2{
+     font-size: 30px;
+     color: var(--logob);
+     font-family: var(--ff-regular);
+     margin-bottom: 20px;
+     margin-top: 20px;
+}
+section p{
+     font-size: 16px;
+     color: var(--gray);
+     font-family: var(--ff-regular);
+     margin-bottom: 20px;
+}
+
+
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min--moz-device-pixel-ratio: 2),

@@ -1,7 +1,21 @@
 /* FONTS  */
-/* ROOT  */
-/* GLOBALL */
+@import 'font.css';
 
+/* ROOT  */
+:root{
+     --logob: #4d9c0d;
+     --logoh: #63be1997;
+     --narx: #519d14;
+     --text: #69cf17;
+     --0000: 'Raleway-Black';
+     --1111: 'Raleway-Thin' ;
+     --2222: 'Raleway-Bold' ;
+     --3333: 'Raleway-Regular' ;
+     --4444: 'Raleway-Light' ;
+     --black: #000000;
+     --white: #ffffff;
+ }
+/* GLOBALL */
 html {
      height: 100%;
      box-sizing: border-box;
